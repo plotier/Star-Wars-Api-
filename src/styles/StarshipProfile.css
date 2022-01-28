@@ -1,0 +1,21 @@
+*{
+    background-color  : #0a0b0b;
+}
+.containerShip{
+    background-color: #0a0b0b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.containerShip .row{
+    width: 65%;
+}
+.containerShip .row ul{
+    padding-left: 0;
+}
+.containerShip .row li{
+    margin-bottom: 15px;
+}
