@@ -1,4 +1,4 @@
-.navbar{
+.navbarCraft{
     width: 100%;
     background-color: black;
     height: 10rem;
@@ -18,4 +18,23 @@
     height: 2rem;
     background:black;
     border:#a9a9a9 1px solid;
+    display: flex;
+    justify-content: center;
+
+}
+.buttonNavbar{
+    border:#a9a9a9 1px solid;
+}
+.navTabs{
+    text-align: center;
+    border-right: #a9a9a9 1px solid;
+    width:100px;
+    height: 100%;
+    color:#a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navTabs:nth-child(1n){
+    border-left: #a9a9a9 1px solid;
 }

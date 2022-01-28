@@ -3,6 +3,7 @@ import "../styles/Starships.css"
 import { useEffect, useState } from 'react';
 import axios from "axios";
 import { Starship } from "../components/Starship"
+import {Link} from "react-router-dom"
 
 
 export const Starships = () => {
@@ -13,19 +14,20 @@ export const Starships = () => {
         axios
             .get(`https://swapi.dev/api/starships/`)
             .then((res) => {
-                setSpaceships(res.data.results);
+                setSpaceships(res.data.results);   
+                // console.log(res.data)          
             })
     }, []);
 
 
+
     return (
         <div>
-            <h1>Star Wars Starships</h1>
             <div className='shipsItemContainer'>
 
                 {
                     spaceships.map((ship, index) =>
-                        <Starship key={index} nombre={ship.name} modelo={ship.model} />)
+                        <Starship key={ship.url} nombre={ship.name} modelo={ship.model} url={ship.url}/>)
                 }
 
             </div>

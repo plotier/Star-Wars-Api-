@@ -1,6 +1,6 @@
 body{
     background-color: #0a0b0b;
-    color:#a9a9a9
+  
 }
 
 h1 {
@@ -14,13 +14,15 @@ ul {
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: #0a0b0b;
+    color:#a3a3a3  
 }
 
 
 .shipItem {
     background-color: #282727;
     width: 75%;
-    height: 90px;
+    height: 100px;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -30,3 +32,15 @@ ul {
 .shipItem li{
     padding:6px;
 }
+.shipItemLink{
+        color:#a3a3a3  ;
+        text-decoration:none;
+}
+
+.shipItem :active, :focus, :link, :visited{
+    color:#a3a3a3
+}
+.shipItem :hover{
+    color: #a3a3a36b;
+}
+
