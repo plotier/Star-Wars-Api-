@@ -40,7 +40,7 @@ export const Starships = () => {
 
     return (
         <div>
-            <InfiniteScroll
+{            <InfiniteScroll
           dataLength={spaceships.length}
           next={()=>setPage(page=>page<4?page+1:page)}
           hasMore={hasMore}
@@ -57,7 +57,7 @@ export const Starships = () => {
 </div>
 </InfiniteScroll>
 
-            
+            }
         </div>
     )
 }

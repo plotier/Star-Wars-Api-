@@ -1,3 +1,7 @@
+.backgroundNavbar{
+    background-image: url(../img/stars.png);
+}
+
 .navbarCraft{
     width: 100%;
     background-color: black;
@@ -5,13 +9,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/stars.png);
+    background-color: transparent;
+    
     }
 .logoPic{
     background-color:transparent;
     justify-content: center;
     align-items: center;
+    margin-left: 10rem;
 }
+.signing{
+align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 12%;
+    background-color:transparent ;
+    color:#a3a3a3;
+}
+.signing span{
+    background-color: transparent;
+}
+.loginOpenModal:hover{
+    cursor: pointer;
+}
+.signupOpenModal:hover{
+    cursor: pointer;
+}
+
+
+
 .navigationNavbar{
     width: 100%;
     height:3rem;
