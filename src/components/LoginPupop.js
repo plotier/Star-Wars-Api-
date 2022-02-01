@@ -43,6 +43,7 @@ export const LoginPupop = props => {
     const user = usersArray.find(element => element.email === login.email && element.password === login.password)
     user ? setLogged(logged => logged = true) : setLogged(logged => logged = false)
     user && alert(`Bienvenido, ${user.firstName}`)
+    !user && alert(`Sus datos no son correctos, intente nuevamente`)
   }
 
   useEffect(() => {

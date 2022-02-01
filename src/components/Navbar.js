@@ -4,7 +4,7 @@ import logo from '../img/logo.svg'
 import { Link } from "react-router-dom";
 import { LoginPupop } from "./LoginPupop";
 import { SignUp } from "./SignUp";
-
+import { useNavigate } from "react-router-dom";
 
 
 export const Navbar = () => {
@@ -19,6 +19,19 @@ export const Navbar = () => {
 
     const valueLogged = localStorage.getItem('logged');
     const nuevoLogged = JSON.parse(valueLogged);
+
+
+
+
+ 
+
+let navigate = useNavigate();
+const handleLogOut=()=>{
+    
+localStorage.setItem('logged', JSON.stringify(false))
+return navigate("/");
+}
+
 
 
 
@@ -38,6 +51,7 @@ export const Navbar = () => {
                 </div>}
                 {nuevoLogged && <div className="signing">
                     <h5 className="m-2">You ´re logged in the Dark Side</h5>
+                    <span className="signupOpenModal" onClick={handleLogOut}>LogOut</span>
                 </div>}
             </div>
             <div className="navigationNavbar">
