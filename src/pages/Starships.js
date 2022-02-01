@@ -5,9 +5,7 @@ import axios from "axios";
 import { Starship } from "../components/Starship"
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-
 export const Starships = () => {
-
 
     const [spaceships, setSpaceships] = useState([])
     const [page, setPage] = useState(1)
@@ -28,7 +26,6 @@ export const Starships = () => {
             .then((res) => {
                 res.data.next == null ? setHasMore(false) : setHasMore(true)
             })
-
     }
 
     useEffect(() => {
@@ -36,13 +33,9 @@ export const Starships = () => {
         stoppingScroll()
     }, [page]);
 
-    const valueLogged = localStorage.getItem('logged');
-    const nuevoLogged = JSON.parse(valueLogged);
-
-
     return (
         <div>
-            {nuevoLogged && <InfiniteScroll
+            <InfiniteScroll
                 dataLength={spaceships.length}
                 next={() => setPage(page => page < 4 ? page + 1 : page)}
                 hasMore={hasMore}
@@ -58,8 +51,6 @@ export const Starships = () => {
                     }
                 </div>
             </InfiniteScroll>
-
-            }
         </div>
     )
 }

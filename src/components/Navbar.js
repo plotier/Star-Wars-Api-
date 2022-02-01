@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../styles/Navbar.css'
 import logo from '../img/logo.svg'
 import { Link } from "react-router-dom";
@@ -19,6 +19,9 @@ export const Navbar = () => {
 
     const valueLogged = localStorage.getItem('logged');
     const nuevoLogged = JSON.parse(valueLogged);
+
+
+
 
     return (
         <div>

@@ -22,7 +22,7 @@ export const SignUp = props => {
         setUsuariosGuardados([...usuariosGuardados,
         datosUsuario
         ])
-        localStorage.setItem('user', JSON.stringify(datosUsuario))
+        // localStorage.setItem('user', JSON.stringify(datosUsuario))
         
     }
     useEffect(()=>{
