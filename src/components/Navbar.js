@@ -37,7 +37,7 @@ export const Navbar = () => {
                     <span className="signupOpenModal" onClick={openSignupModal}>/  SIGN UP</span>
                 </div>}
                 {nuevoLogged && <div className="signing">
-                    <h5>Usuario conectado</h5>
+                    <h5 className="m-2">You ´re logged in the Dark Side</h5>
                 </div>}
             </div>
             <div className="navigationNavbar">

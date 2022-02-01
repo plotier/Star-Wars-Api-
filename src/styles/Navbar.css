@@ -23,9 +23,13 @@ align-items: center;
     justify-content: center;
     display: flex;
     width: 12%;
-    background-color:transparent ;
+    background-color:transparent;
     color:#a3a3a3;
 }
+.signing h5{
+    background-color: transparent;
+}
+
 .signing span{
     background-color: transparent;
 }

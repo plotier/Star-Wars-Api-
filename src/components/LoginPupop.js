@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../styles/LoginPupop.css'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const LoginPupop = props => {
 
@@ -18,7 +19,13 @@ export const LoginPupop = props => {
 
   const [login, setLogin] = useState({})
   const [logged, setLogged] = useState(finalState)
- 
+
+   let navigate = useNavigate();
+  useEffect(() => {
+    if (logged){
+       return navigate("/");
+    }
+ },[logged]);
 
 
   const handlerLoginInput = e => {
@@ -56,17 +63,17 @@ export const LoginPupop = props => {
 
   return (
     props.trigger ?
-      <div className='wholePupop'>
+      <form className='wholePupop'>
         <div className='loginModal '>
           <div onClick={props.closingFunction} className='cerrarLoginCruz' />
           <div className='publiDisney'></div>
           <h3 className="signInTitle">SIGN IN</h3>
           <input onChange={e => handlerLoginInput(e)} name="email" type="text" placeholder='Email Address' className=" form-control" />
           <input onChange={e => handlerLoginInput(e)} name="password" type="password" placeholder='Password' className=" form-control" />
-          <button onClick={() => { found(); }} className="btn btn-secondary signInButton">Sign In</button>
+          <button type='submit' onClick={() => { found(); }} className="btn btn-secondary signInButton">Sign In</button>
         </div>
 
-      </div>
+      </form>
       :
       "")
 }

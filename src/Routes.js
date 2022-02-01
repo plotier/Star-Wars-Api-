@@ -4,6 +4,8 @@ import { Starships } from './pages/Starships';
 import { Navbar } from './components/Navbar';
 import { StarshipProfile } from './components/StarshipProfile';
 
+
+
 export default () => (
     <BrowserRouter>
     <Navbar/>

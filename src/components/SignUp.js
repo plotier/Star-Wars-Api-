@@ -42,7 +42,7 @@ export const SignUp = props => {
                     <input onChange={e => handleUserInput(e)} type="text" name='lastName' placeholder='Last Name' className=" form-control" />
                     <input onChange={e => handleUserInput(e)} type="text" name='email' placeholder='Email Address' className=" form-control" />
                     <input onChange={e => handleUserInput(e)} type="password" name='password' placeholder='Password' className=" form-control" />
-                    <button onClick= {savingUser}  type="button" className="btn btn-secondary signInButton">Sign up</button>
+                    <button type='submit' onClick= {savingUser} className="btn btn-secondary signInButton">Sign up</button>
                 </form>
 
             </div>

@@ -27,15 +27,21 @@ export const Starships = () => {
                 res.data.next == null ? setHasMore(false) : setHasMore(true)
             })
     }
+    const valueLogged = localStorage.getItem('logged');
+    const nuevoLogged = JSON.parse(valueLogged);
 
     useEffect(() => {
         fetchingShips()
         stoppingScroll()
     }, [page]);
 
+useEffect(()=>{
+
+},[])
+
     return (
         <div>
-            <InfiniteScroll
+            {nuevoLogged && <InfiniteScroll
                 dataLength={spaceships.length}
                 next={() => setPage(page => page < 4 ? page + 1 : page)}
                 hasMore={hasMore}
@@ -50,7 +56,11 @@ export const Starships = () => {
                             <Starship key={ship.url} nombre={ship.name} modelo={ship.model} url={ship.url} />)
                     }
                 </div>
-            </InfiniteScroll>
+            </InfiniteScroll>}
+
+            {!nuevoLogged&&<div>
+                <h4>You must be logged to access the Starship Database :`(</h4>
+                </div>}
         </div>
     )
 }
