@@ -53,10 +53,10 @@ export const StarshipProfile = props => {
                 <div className="row">
                     <h4>Related Pilots</h4>
                     <div className='container d-flex justify-content-center'>
-                        {ship.pilots.length>0?
-                        ship.pilots.map(item =>
-                            <Pilots url={item} />
-                        ):<h4>This Ship Doesn´t Have Pilots</h4>}
+                        {ship.pilots.length > 0 ?
+                            ship.pilots.map(item =>
+                                <Pilots url={item} />
+                            ) : <h4>This Ship Doesn´t Have Pilots</h4>}
                     </div >
                 </div>}
         </div >

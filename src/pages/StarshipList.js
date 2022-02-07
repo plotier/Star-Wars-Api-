@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Starships.css"
+import "../styles/StarshipList.css"
 import { useEffect, useState } from 'react';
 import axios from "axios";
 import { Starship } from "../components/Starship"
@@ -16,9 +16,7 @@ export const StarshipList = () => {
             .get(`https://swapi.dev/api/starships/?page=${page}`)
             .then((res) => {
                 setSpaceships(prevSpaceships => prevSpaceships.concat(res.data.results));
-                // console.log(res.data)  //////////////////////////////////////////////////////////////////        
-            })
-    }
+            })}
 
     const stoppingScroll = () => {
         axios
@@ -57,7 +55,7 @@ export const StarshipList = () => {
             }
 
             {
-                !nuevoLogged && <div data-testid="starshipList-test">
+                !nuevoLogged && <div data-testid="starshipList-test" className='notLoggedSign'>
                     <h4>You must be logged to access the Starship Database :`(</h4>
                 </div>
             }

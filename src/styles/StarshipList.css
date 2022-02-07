@@ -7,7 +7,6 @@ h1 {
     text-align: center;
 }
 
-
 .shipsItemContainer{
     display:flex;
     flex-direction: column;
@@ -20,7 +19,6 @@ ul{
     list-style: none;
     background-color: #282727;
 }
-
 
 .shipItem {
     background-color: #282727;
@@ -51,5 +49,11 @@ ul{
 }
 .shipItem :hover{
     color: #a3a3a3;
+}
+
+.notLoggedSign{
+display: flex;
+justify-content: center;
+margin-top: 10%
 }
 

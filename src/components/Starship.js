@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Starships.css"
+import "../styles/StarshipList.css"
 import { Link } from 'react-router-dom';
 export const Starship = (props) => {
 
@@ -8,7 +8,6 @@ export const Starship = (props) => {
   const idArtificial = parseInt(manipulado)
 
   return (
-
     <div className='shipItem'>
       <Link to={"/starships/" + idArtificial} className='shipItemLink' >
         <div>
