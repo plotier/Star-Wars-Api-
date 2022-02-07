@@ -57,7 +57,7 @@ export const StarshipList = () => {
             }
 
             {
-                !nuevoLogged && <div>
+                !nuevoLogged && <div data-testid="starshipList-test">
                     <h4>You must be logged to access the Starship Database :`(</h4>
                 </div>
             }

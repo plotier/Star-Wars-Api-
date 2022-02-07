@@ -32,9 +32,9 @@ export const SignUp = props => {
 
     return (
         props.trigger ?
-            <div className='wholePupop'>
+            <div data-testid='signup-test' className='wholePupop'>
 
-                <form  id="signUpModal" className='loginModal'>
+                <form id="signUpModal" className='loginModal'>
                     <div onClick={props.closingFunction} className='cerrarLoginCruz' />
                     <div className='publiDisney'></div>
                     <h3 className="signInTitle">Create your account</h3>

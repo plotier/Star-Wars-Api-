@@ -20,7 +20,7 @@ export const StarshipProfile = props => {
     }, []);
 
     return (
-        <div className="containerShip">
+        <div data-testid="starshipProfile-test" className="containerShip">
             <img
                 src={`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`} className="img-fluid" alt="Responsive image"
                 onError={({ currentTarget }) => {
