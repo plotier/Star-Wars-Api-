@@ -3,6 +3,10 @@
 Starship Star Wars database using the Star Wars `API`.
 Built with `React Hooks`.
 
+## Demo
+
+![star wars clone](./src/img/demo.gif)
+
 ## Project Details
 - Information taken from the star wars API, using `AXIOS`.
 - Displays a list of ships, with name and model.
