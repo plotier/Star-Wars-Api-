@@ -22,7 +22,7 @@ Built with `React Hooks`.
 # install dependencies
 npm install
 # Runs the app in the development mode
-npm start
+npm run start
 ```
 Open http://localhost:3000 to view it in your browser.
 
