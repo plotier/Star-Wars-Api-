@@ -1,6 +1,6 @@
 # Star Wars Starship Database
 
-Starship Star Wars database using the Star Wars `API``.
+Starship Star Wars database using the Star Wars `API`.
 Built with `React Hooks`.
 
 ## Project Details
