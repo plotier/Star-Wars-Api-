@@ -1,0 +1,59 @@
+body{
+    background-color: #0a0b0b;
+  
+}
+
+h1 {
+    text-align: center;
+}
+
+.shipsItemContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0b0b;
+    color:#a3a3a3  
+}
+.shipsItemContainer 
+ul{
+    list-style: none;
+    background-color: #282727;
+}
+
+.shipItem {
+    background-color: #282727;
+    width: 75%;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    font-family:  Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.shipItem li{
+    padding:6px;
+    background-color: #282727;
+}
+.shipItemLink{
+    background-color: #282727;
+    color:#a3a3a3;
+        text-decoration:none;
+}
+
+.shipItem :active, :focus, :link, :visited{
+    color:#a3a3a3;
+    background-color: #282727;
+}
+.shipItem :hover{
+    color: #a3a3a3;
+}
+
+.notLoggedSign{
+display: flex;
+justify-content: center;
+margin-top: 10%
+}
+

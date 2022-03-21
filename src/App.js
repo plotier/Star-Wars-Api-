@@ -1,6 +1,4 @@
-import './App.css';
-import { Home } from './pages/Home';
-import { Starships } from './pages/Starships';
+import '../src/styles/App.css'
 import Routes from './Routes';
 
 function App() {
